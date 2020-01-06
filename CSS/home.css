@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.topBar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  background-color: #162025;
+  justify-content: space-evenly;
+}
+
+.logoWrapper {
+  width: 20%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.logoName {
+  font-family: Rockwell, "Time-new-roman";
+  margin: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.searchBarWrapper {
+  width: 50%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+.SearchLogo {
+  width: 23px;
+  height: 23px;
+  margin-left: 8px;
+}
+
+#searchInput {
+  width: 90%;
+  margin-left: 10px;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-style: none;
+}
+#searchInput::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #a3a3a3;
+}
+.searchBar i {
+  font-size: 16px;
+  color: #f7f5f5;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: darkgray;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.searchBar i:hover {
+  background-color: #000;
+}
+
+.navigation {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+/* .navigation i {
+    display: none;
+   
+  } */
+.navigationWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navNameWrapper {
+  display: flex;
+}
+
+.navName {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.navName i {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.navBar {
+  display: none;
+}
+
+.userImgWrapper {
+  width:  80px
+}
+
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 880px) {
+  .searchBarWrapper {
+    width: 60%;
+  }
+  .navigation {
+    width: 5%;
+    justify-content: flex-end;
+  }
+  .navigationWrapper {
+    display: none;
+  }
+  .navBar {
+    display: inline;
+    color: aliceblue;
+  }
+}
