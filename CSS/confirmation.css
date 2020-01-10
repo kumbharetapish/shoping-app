@@ -1,0 +1,52 @@
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.sectionContainer {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+  align-items: center;
+}
+.orderSuccessBtn {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 200px;
+  -webkit-animation: spin 2s linear 1s;
+  animation: spin 2s linear;
+}
+@keyframes spin {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .orderSuccessBtn {
+    width: 150px;
+  }
+
+  h1{
+    font-size: 25px;
+  }
+  p{
+    font-size: 15px;
+  }
+
+}

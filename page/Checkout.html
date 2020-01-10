@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e3ae4b32cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+
+    <!--Start header  -->
+    <div class="topBar">
+
+        <div class="logoWrapper">
+            <div class="logo">
+                <h1 class="logoName">SHOPLANE</h1>
+            </div>
+        </div>
+
+        <div id="navBar">
+            <i class="fas fa-bars navBarLogo"></i>
+        </div>
+        <div class="searchBarWrapper">
+            <div class="searchBar">
+                <img src=../searchlogo.svg class="SearchLogo" alt="logo" />
+                <input type="text" value="" id="searchInput" placeholder="Search What you like..." />
+                <i class="fas fa-search search" onClick={changeSearch}></i>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="navigationWrapper">
+                <div class="navNameWrapper">
+                    <a href="/#" class="navName">
+                        <i class="fas fa-tshirt"></i>Clothing
+                    </a>
+                </div>
+
+                <div class="navNameWrapper">
+                    <a href="#" class="navName">
+                        <i class="fas fa-hat-wizard"></i>Accessories
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartBtnWrapper">
+
+            <a href="../page/Checkout.html">
+                <samp id="cartCount">0</samp><i class="fas fa-cart-plus"></i>
+            </a>
+
+            <div class="userImgWrapper">
+                <img src="https://pbs.twimg.com/profile_images/1047013810836557826/zYh07r8h_400x400.jpg" class="userImg"
+                    alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebarClose">
+    </div>
+    <h1 class="heading"> Checkout </h1>
+    <div class="popWrapper" id="popWrapper">
+    </div>
+
+    <div class="checkoutContainer">
+
+        <div class="checkoutCartContainer" id="cartContainer">
+        </div>
+        <div class="checkoutAmountWrapper" id="amountWrapper">
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footerWrapper">
+            <div class="footerSection">
+                <div class="footerHeading">
+                    <h2> Online Store</h2>
+                </div>
+                <div class="linkWrapper">
+                    <a href="http://"> Men Clothing</a>
+                    <a href="http://"> Women Clothing </a>
+                    <a href="http://"> Men Accessories</a>
+                    <a href="http://"> Women Accessories </a>
+                </div>
+            </div>
+
+            <div class="footerSection">
+                <div class="footerHeading">
+                    <h2> Brand Partner</h2>
+                </div>
+                <div class="linkWrapper">
+                    <a href="http://"> Puma</a>
+                    <a href="http://"> Nike</a>
+                    <a href="http://"> iPhone</a>
+                    <a href="http://"> ZARA</a>
+                </div>
+            </div>
+
+            <div class="footerSection">
+                <div class="footerHeading">
+                    <h2> Address </h2>
+                </div>
+                <div class="linkWrapper">
+                    <a href="http://"> #6/1 B2 Cross Ground Floor Vishram Baug,
+                        Near Makhmalli Talav L B S Marg,
+                        Thane H.o. Maharashtra - 400601 </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapperDesign">
+            <h3 class=" designName">Design By Tapish Kumbhare</h3>
+            <h5 class="designEmail">kumbharetapish12@gmail.com</h5>
+        </div>
+    </div>
+    <script src="../script/base.js"></script>
+    <script src="../script/checkout.js"></script>
+</body>
+
+</html>
