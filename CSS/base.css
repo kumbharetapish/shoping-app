@@ -36,6 +36,11 @@ body {
   font-size: 30px;
   line-height: 42px;
   color: #ffffff;
+  text-decoration: none;
+}
+.logoName:hover {
+  color: #8437db;
+  transform: scale(1.05, 1.05);
 }
 
 #navBar {
@@ -288,17 +293,6 @@ body {
   top: 80px;
   padding-left: 20px;
   padding-right: 20px;
-  animation: spin 2s linear;
-}
-
-@keyframes spin {
-  0% {
-    transform: translateX(29);
-  }
-
-  100% {
-    transform: translateX(290);
-  }
 }
 
 .navigator {
@@ -314,6 +308,13 @@ body {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #9e8f8f;
+}
+
+.edyuda {
+  position: fixed;
+  width: 100px;
+  bottom: 5%;
+  right: 5%;
 }
 
 @media only screen and (max-width: 880px) and (min-width: 601px) {
