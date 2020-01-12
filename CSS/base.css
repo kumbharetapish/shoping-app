@@ -39,8 +39,8 @@ body {
   text-decoration: none;
 }
 .logoName:hover {
-  color: #8437db;
   transform: scale(1.05, 1.05);
+  cursor: pointer;
 }
 
 #navBar {
@@ -171,7 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #162025;
-  height: 300px;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -221,19 +221,21 @@ body {
 }
 .wrapperDesign {
   top: 20px;
-  position: relative;
   width: 100%;
-  background-color: #162025;
   padding-bottom: 10px;
+  text-align: center;
 }
 
-.designName {
+#designName {
   font-size: 12px;
   color: #9e8f8f;
   margin: 0px;
   margin-bottom: 5px;
   font-weight: 100;
   text-align: center;
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .designEmail {
@@ -273,16 +275,19 @@ body {
   }
 }
 .sidebarCls {
+  display: flex;
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(119, 134, 134, 0.589);
+  background-color: rgba(35, 34, 41, 0.589);
   top: 0%;
   left: 0%;
+  transition: width 5s ;
   /* z-index: 1; */
 }
 
 .sidebarClose {
+  
   display: none;
 }
 .sideBarWrapper {
@@ -293,6 +298,7 @@ body {
   top: 80px;
   padding-left: 20px;
   padding-right: 20px;
+  transition: width 5s ;
 }
 
 .navigator {
@@ -353,9 +359,6 @@ body {
     justify-content: space-between;
   }
 
-  .footer {
-    height: 100%;
-  }
   .footerWrapper {
     margin-top: 20px;
     flex-direction: column;
@@ -401,11 +404,8 @@ body {
     color: aliceblue;
   }
 
-  /* .sidebarCls {
-    display: none;
-  } */
-
   .sidebarClose {
+    transition: ease-out 1s;
     display: none;
   }
   .sideBarWrapper {
