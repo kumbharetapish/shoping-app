@@ -2,7 +2,6 @@
 body {
   margin: 0px;
   box-sizing: border-box;
-  /* font-family: 'Fjalla One', sans-serif; */
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -28,19 +27,19 @@ body {
   cursor: pointer;
 }
 .logoName {
-  font-family: "Fjalla One", sans-serif;
   font-family: "Josefin Sans", sans-serif;
   margin: 0px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   line-height: 42px;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
+
 .logoName:hover {
   transform: scale(1.05, 1.05);
-  cursor: pointer;
 }
 
 #navBar {
@@ -60,7 +59,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10px; */
 }
 .SearchLogo {
   width: 23px;
@@ -141,7 +139,7 @@ body {
   align-items: center;
 }
 .cartBtnWrapper a {
-  color: cornsilk;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 #cartCount {
@@ -282,12 +280,11 @@ body {
   background-color: rgba(35, 34, 41, 0.589);
   top: 0%;
   left: 0%;
-  transition: width 5s ;
+  transition: width 5s;
   /* z-index: 1; */
 }
 
 .sidebarClose {
-  
   display: none;
 }
 .sideBarWrapper {
@@ -298,7 +295,7 @@ body {
   top: 80px;
   padding-left: 20px;
   padding-right: 20px;
-  transition: width 5s ;
+  transition: width 5s;
 }
 
 .navigator {
