@@ -123,8 +123,9 @@ var cerateProductDetail = data => {
     if (orderTotal === null) {
       orderTotal = [];
       localStorage.setItem("orderTotal", JSON.stringify(grandTotal));
+      HeaderCart.innerHTML = grandTotal.totalOrderQuantity;
     } else {
-      console.log(orderTotal);
+      HeaderCart.innerHTML = orderTotal.totalOrderQuantity;
       orderTotal.totalOrderQuantity = orderTotal.totalOrderQuantity + 1;
       orderTotal.totalPrice = orderTotal.totalPrice + data.price;
       localStorage.setItem("orderTotal", JSON.stringify(orderTotal));
@@ -133,14 +134,9 @@ var cerateProductDetail = data => {
 
     var OrderData = JSON.parse(localStorage.getItem("orderData"));
     let localOrderData;
-    var localArr = OrderData;
-    console.log(typeof OrderData);
-
     if (OrderData === null) {
       OrderData = [];
       localStorage.setItem("orderData", JSON.stringify([Data]));
-      // renderLocalTodos(localStorage.getItem("orderData"));
-      console.log(OrderData);
     } else {
       for (let i = 0; i < OrderData.length; i++) {
         if (OrderData[i].id === Data.id) {
@@ -150,7 +146,6 @@ var cerateProductDetail = data => {
           localStorage.setItem("orderData", JSON.stringify(OrderData));
         } else {
           localOrderData = JSON.parse(localStorage.getItem("orderData"));
-          console.log(OrderData.length);
           if (i + 1 === OrderData.length) {
             localOrderData.push(Data);
             localStorage.setItem("orderData", JSON.stringify(localOrderData));
@@ -168,6 +163,5 @@ var cerateProductDetail = data => {
   details.append(previewWrapper);
   details.append(cartBtn);
   detailWrapper.append(details);
-  // console.log(detailWrapper);
   return detailWrapper;
 };
