@@ -38,7 +38,6 @@ function createSideNav() {
 sideBar.append(createSideNav());
 
 var openLink = document.getElementById("designName");
-console.log(openLink);
 
 openLink.addEventListener("click", function() {
   window.open("https://www.linkedin.com/in/kumbharetapish/", "_black");

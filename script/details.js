@@ -142,7 +142,6 @@ var cerateProductDetail = data => {
         if (OrderData[i].id === Data.id) {
           OrderData[i].quantity = counter;
           OrderData[i].price = price;
-          console.log(OrderData);
           localStorage.setItem("orderData", JSON.stringify(OrderData));
         } else {
           localOrderData = JSON.parse(localStorage.getItem("orderData"));

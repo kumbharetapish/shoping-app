@@ -79,7 +79,7 @@ function currentSlide(n) {
 
 setInterval(function() {
   plusSlides(1);
-}, 2000);
+}, 3000);
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

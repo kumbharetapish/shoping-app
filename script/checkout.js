@@ -74,8 +74,13 @@ function createAmountCart(data) {
   orderPlaceBtn.className = "orderPlaceBtn";
   orderPlaceBtn.innerHTML = "Place Order";
   orderPlaceBtn.addEventListener("click", function() {
-    orderPost(orderConfirm);
-    popUp.style.display = "flex";
+    if (orderConfirm.totalAmount !== null) {
+      orderPost(orderConfirm);
+      popUp.style.display = "flex";
+    }
+    if (orderConfirm.totalAmount === null) {
+      alert("Sorry , Cart Empty");
+    }
     // window.location.assign("../page/Confirmation.html");
   });
   orderPlaceImg = create("img");
@@ -134,8 +139,10 @@ function emptyCart() {
 if (orderData === null) {
   cartContainer.append(emptyCart());
 }
-for (let i = 0; i < orderData.length; i++) {
-  cartContainer.append(createCheckoutCart(orderData[i]));
+if (orderData !== null) {
+  for (let i = 0; i < orderData.length; i++) {
+    cartContainer.append(createCheckoutCart(orderData[i]));
+  }
 }
 
 var orderPost = order => {
@@ -143,6 +150,5 @@ var orderPost = order => {
   var Xhttp = new XMLHttpRequest();
   Xhttp.open("POST", postApi, true);
   Xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  console.log(orderConfirm);
   Xhttp.send(JSON.stringify(order));
 };
