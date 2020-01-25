@@ -44,7 +44,7 @@ function CreatePopUp(orderID) {
   confirmBtn.innerHTML = "Order Confirm";
   confirmBtn.addEventListener("click", function() {
     localStorage.clear();
-    window.location.assign("../page/confirmation.html");
+    window.location.assign("../page/Confirmation.html");
   });
 
   popContainer.append(confirmBtn);
